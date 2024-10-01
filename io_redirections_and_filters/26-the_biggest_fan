@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 nasa_19950801.tsv | tail -n +2 | sort | uniq -c | sort -nr | head -n 11 | tr -s ' ' | cut -d ' ' -f3
+while IFS=$'\t' read -r host _ _ _ _ _; do (( host_counts[$host]++ )); done < "$1"; printf "%s\n" "${host_counts[@]}" | sort -nr | head -n 11
