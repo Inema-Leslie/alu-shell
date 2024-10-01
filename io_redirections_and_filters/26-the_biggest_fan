@@ -1,2 +1,2 @@
 #!/bin/bash
-while IFS=$'\t' read -r host _ _ _ _ _; do (( host_counts[$host]++ )); done < "$1"; printf "%s\n" "${host_counts[@]}" | sort -nr | head -n 11
+while IFS=$'\t' read -r host _ _ _ _ _; do (( host_counts[$host]++ )); done < "$1"; printf "%s\n" "${host_counts[@]}" sort -nr head -n 11
