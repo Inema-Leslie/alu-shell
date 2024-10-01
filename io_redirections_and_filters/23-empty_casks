@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -size 0 -o -type d -empty -print
+find . -empty -exec sh -c 'for f; do echo "${f#./}"; done' sh {} +
