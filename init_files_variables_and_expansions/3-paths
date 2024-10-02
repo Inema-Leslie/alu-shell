@@ -1,2 +1,2 @@
 #!/bin/bash
-directories=($PATH); count=0; for dir in "${directories[@]}"; do [[ -d "$dir" ]] && ((count++)); done; echo "Number of directories in PATH: $count"
+touch count_dirs_in_path.sh
