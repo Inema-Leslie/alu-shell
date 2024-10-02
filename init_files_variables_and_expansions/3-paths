@@ -1,0 +1,2 @@
+#!/bin/bash
+touch count_dirs_in_path.sh
