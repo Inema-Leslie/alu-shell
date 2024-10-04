@@ -1,2 +1,2 @@
-#!/bin/bash
-touch list_env_vars.sh
+bin/bash
+echo "$(printenv)"
